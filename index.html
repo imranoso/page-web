@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambiance</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="#">Ton<span>Ambiance</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation"> 
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+                
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Ambiance</a></li>
+                    <li><a href="music.html">Music</a></li>
+                </ul>
+                <ul class="secondary-nav">
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead"> BTSNIR présent</p>
+                <h1>Ambiance</h1>
+
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">L'equipe</a>
+                    <a href="video.html" class="watch-video-cta">
+                        <img src="images/watch.svg" alt="Watch a video">Regarder la video
+                    </a>
+                </div>
+            </div>
+
+            <img src="images/Musique_Home.jpg" class="hero-img" alt="Illustration">
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <li>Choisis la musique que tu veux!</li>
+                <li>Personnalise ta propre playist!</li>
+                <li>Programme-les à l'heure que tu veux!</li>
+                <li>Ambiance la salle avec des playist thématique</li>
+                <li>Control la musique depuis ton telephone aussi!</li>
+            </ul>
+
+            <img src="images/led-sources-bon.jpg" alt="Man holding phone">
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="equipe"> <h1>L'equipe</h1></div>
+            <ul>
+                <li>
+                    <img src="images/personne-silhouette.svg" alt="Person">
+
+                    <blockquote>Maxime Merveille</blockquote>
+                    
+                </li>
+                <li>
+                    <img src="images/personne-silhouette.svg" alt="Person">
+
+                    <blockquote>Imran Ajmal</blockquote>
+                    
+                </li>
+                <li>
+                    <img src="images/personne-silhouette.svg" alt="Person">
+
+                    <blockquote>Lounis Hamroun</blockquote>
+                    
+                </li>
+                <li>
+                    <img src="images/personne-silhouette.svg" alt="Person">
+
+                    <blockquote>Aubin le chanteur</blockquote>
+                    
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Contact</h2>
+
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                    <input type="submit" class="send-message-cta" value="Send message">
+                </form>
+            </div>
+            <div class="contact-right">
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+    </script>
+</body>
+</html>
